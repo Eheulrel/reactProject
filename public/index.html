@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dynamic Busan - 부산맛집</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c08f514eaf9cde0b7d4a302a503c5cbc"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+	</script>
+    </head>
+  <body>
+    <div class="title">
+        <img src='/img/logo.png' class="logo">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        부산 여행자들을 위한 맛집 리스트
+    </div>
+        <form name=fsearch method=get style="margin:0px;" action="http://www.google.co.kr/search" target="_blank" class="searchbox">
+          <input type=hidden name=where value="nexteach">
+          <input name=query itemname="검색어" required value="" size="33" placeholder="Search in Google">
+          <input type=image src="/img/google.jpg" width="20px">
+        </form>
+    
+    <div id="root"></div>
+	  
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.web.dao.BasketDAO">
+	<insert id="basketInsert" parameterType="basket">
+		insert into Basket(memberId, productName, quantity) 
+		values(#{memberId}, #{productName}, #{quantity})
+	</insert>
+	
+	<select id="basketSelect" parameterType="basket" resultType="integer">
+		select quantity from Basket where memberId=#{memberId} and productName=#{productName}
+	</select>
+	
+	<update id="basketUpdate" parameterType="basket">
+		update Basket set quantity=#{quantity} where memberId=#{memberId} and productName=#{productName}
+	</update>
+	
+	<select id="basketView" parameterType="basket" resultType="basket">
+		select * from Basket where memberId=#{memberId}
+	</select>
+	
+	<delete id="basketDelete" parameterType="String">
+		delete from Basket where memberId=#{id}
+	</delete>
+</mapper>
