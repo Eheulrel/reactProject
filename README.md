@@ -6,4 +6,4 @@
 리액트환경(Js코드) + 스프링 게시판 
 
 ※ 프로젝트 이전 공부하던 자료 몇 가지 섞여있음
-※ public, src => react환경 / main => spring환경
+※ public, src => react 환경 / main => spring 환경
